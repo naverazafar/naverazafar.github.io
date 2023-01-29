@@ -33,12 +33,18 @@ body {
   /* Add a color to the active/current link */
   .topnav a.active {
     /* background-color: #04AA6D; */
-    color: white;
+    /* color: white; */
 }
+
 
 .menu {
     display: flex;
     justify-content: end;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 div.body {
