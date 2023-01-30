@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <title>My Website</title>
 </head>
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Navera Zafar</a>
+        <a class="active" href="#home">• N Z •</a>
         <div class="menu">
             <a href="#portfolio" class="portfolio">Portfolio</a>
             <a href="#about" class="about">About</a>
@@ -23,7 +26,7 @@
             <div class="typed-out">Welcome.</div>
         </div>
         <div class="body">
-            <div class="myinfo">I'm Navera Zafar, an aspiring front-end web developer.</div>
+            <div class="myinfo">I'm Navera Zafar, a front-end web developer.</div>
         </div>
     </section>
     
@@ -54,12 +57,54 @@
     <section id="about">
         <div class="about">
             <h1>About Me</h1>
+            <div class="about-text">Hello! My name is Navera Zafar. I am currently in the last term of the Computer Information Technology term at BCIT. I am an entry-level programmer with experience in Python, HTML, CSS, JavaScript, and MySQL.</div>
+            <h3>Technical Experience</h3>
+            <ul>
+                <li>Programmed Blackjack, Hangman, and a Trivia game in Python</li>
+                <li>Modeled a real-world music database in MySQL</li>
+                <li>Developed a calculator web application using CSS, JavaScript, and ReactJs</li>
+                <li>Read and extracted data from JSON files in Python and JavaScript</li>
+                <li>Implemented an Object-Oriented Approach programming in Python</li>
+                <li>Implemented an Agile and Scrum approach to programming  a recipe book CRUD web application</li>
+            </ul>
+            <h3>Projects with Companies</h3>
+            <div class="project-info">TeraDrive: I worked with six individuals on a project for TeraDrive. TeraDrive is a professional data recovery company based in BC. TeraDrive wanted to have a tool that would help them distinguish which files can be recovered and which of their files are too corrupted to be recovered. We created a tool that scanned the files and folders chosen and outputted an HTML file that showed which of those files were corrupted, not corrupted, and unscanned. We created the program using Python, JavaScript, HTML, and CSS. We used the template for the Snap2HTML application as our base code. We packaged the application using py2exe.
+            </div>
+            <div class="teradrive">
+                <div class="column">
+                   <img src="./img/teradrive1.JPG" alt="" style="width:100%"> 
+                </div>
+                <div class="column">
+                    <img src="./img/teradrive.JPG" alt="" style="width:100%">
+                </div>
+                <div class="column">
+                   <img src="./img/teradrive2.JPG" alt="" style="width:100%"> 
+                </div>
+                
+            </div>
         </div>
     </section>
     
     <section id="contact">
         <div class="contact">
-            <h1>Contact Information</h1>
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contactform">
+            <form
+            action="https://formspree.io/f/xpzeqrgp"
+            method="POST"
+            >
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     

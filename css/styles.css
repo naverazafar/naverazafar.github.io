@@ -2,6 +2,8 @@ body {
     padding-top: 70px;
     background-color: black;
     height: 100vw;
+    font-family: 'Space Mono', monospace;
+    
 }
 
 /* Add a black background color to the top navigation */
@@ -82,9 +84,23 @@ div.body {
   align-items: flex-start;
 }
 
+div.box-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.box {
+  height: 100px;
+  width: 100px;
+  border: solid;
+  border-top-color: white;
+  border-right-color: white;
+  border-width: thick;
+}
+
 div.myinfo {
   color: white;
-  font-size: 45px;
+  font-size: 30px;
   padding-right: 25px;
   /* background-color: black; */
   display: flex;
@@ -100,9 +116,10 @@ div.txt {
 .typed-out{
   overflow: hidden;
   white-space: nowrap;
-  font-size: 200px;
+  font-size: 150px;
   color: white;
   padding-top: 300px;
+  padding-left: 20px;
   width: 0;
   animation: typing 1s forwards;
 }
@@ -113,6 +130,7 @@ div.txt {
   to { width: 100% }
 }
 
+
 div.portfolio-info {
   display: flex;
   flex-direction: column;
@@ -121,7 +139,7 @@ div.portfolio-info {
   align-items: center;
   position: relative fixed;
   background-color: black;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 div.about {
@@ -132,6 +150,7 @@ div.about {
   align-items: center;
   position: relative fixed;
   background-color: black;
+  padding-top: 75px;
 }
 
 div.contact {
@@ -142,4 +161,66 @@ div.contact {
   align-items: center;
   position: relative fixed;
   background-color: black;
+}
+
+div.about-text {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+div.project-info {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+
+div.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+div.teradrive {
+  display: flex;
+}
+
+
+div.contactform {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+/* form styling https://gist.github.com/joshcornman/882a16c173ecfbea699683884ce6c518 */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  background:white;
+  border-radius: 0px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+/* Input */
+.inputfield {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: block;
+  height: 44px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  transition: all 1s;
+  border: 3px solid rgba(102,51,153,0);
+  background: e;
+  color: white; 
+  margin: 1em 0 2em 0;
+  padding: 2em;
 }
