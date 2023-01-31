@@ -26,31 +26,53 @@
             <div class="typed-out">Welcome.</div>
         </div>
         <div class="body">
-            <div class="myinfo">I'm Navera Zafar, a front-end web developer.</div>
+            <div class="myinfo">I'm Navera Zafar, an entry-level programmer with experience in Python, HTML, CSS, JavaScript, and MySQL.</div>
         </div>
     </section>
     <section id="portfolio">
        <div class="portfolio-info">
         <h1>Portfolio</h1>
-        <div class="recipebook">
-            <h3>Application 1</h3>
-            <img src="" alt="">
-            <h4>Description: </h4>
-            <h4>Technologies Used: </h4>
+        <div class="links">
+            <a href="#uxui">UX/UI</a>
+            <a href="#front-end">Front-End</a>
+            <a href="#backend">Back-End</a>
         </div>
-        <div>
-            <h3>Application 2</h3>
-            <img src="" alt="">
-            <h4>Description: </h4>
-            <h4>Technologies Used: </h4>
-        </div>
-        <div>
-            <h3>Application 3</h3>
-            <img src="" alt="">
-            <h4>Description: </h4>
-            <h4>Technologies Used: </h4>
-        </div>
-        </div> 
+        <br>
+        <br>
+
+        <section id="uxui">
+            <div class="plantify">
+                <div class="plantdesc">
+                    Plantify App: I designed an application as a team using fundamental concepts from my UX/UI course. It is an application that caters to anyone interested in plants. The idea behind the app was to provide people with information about plants. In this app, you can search information about plants, search for specific plants in your area, scan plants, and monitor the progress of your plants. I designed the home page and the my plants page for the application. I also designed the wireframes for the mobile application layout. I used Miro to make all my designs for the application.
+                </div>
+            </div>
+            <div class="slideshow-container">
+                <div class="plants fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./img/miro1.jpg" alt="" style="width: 100%;">
+                    <div class="text">Home Page</div>
+                </div>
+                <div class="plants fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./img/miro2.jpg" alt="" style="width: 100%;">
+                    <div class="text">My Plants Page</div>
+                </div>
+                <div class="plants fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./img/miro3.jpg" alt="" style="width: 100%;">
+                    <div class="text">Plantify App Wireframe</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div> -->
+        </section>
     </section>
     
     <section id="about">
@@ -108,7 +130,7 @@
         </div>
         
     </section>
-    
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 body {
     padding-top: 70px;
     background-color: black;
@@ -17,6 +19,7 @@ body {
     border-bottom: solid;
     border-bottom-color: white;
     border-bottom-width: thick;
+    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
@@ -28,7 +31,7 @@ body {
     padding: 20px 22px;
     text-decoration: none;
     font-size: 17px;
-    width: 10%;
+    width: 15%;
   }
   
   /* Change the color of links on hover */
@@ -37,6 +40,9 @@ body {
     color: black;
   }
   
+  a.active {
+    background-color: black;
+  }
 
 
 /* div.space {
@@ -96,8 +102,9 @@ div.box {
 
 div.myinfo {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   padding-right: 25px;
+  padding-left: 25px;
   /* background-color: black; */
   display: flex;
   justify-content: flex-end;
@@ -242,23 +249,49 @@ button {
 }
 
 
+.plantify {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+} 
+
+
 @media only screen and (max-width: 600px) {
   .topnav a {
     font-size: 8px;
+    width: 33%;
+  }
+
+  a.active {
+    width: 33%;
+    background-color: black;
+  }
+
+  
+  .menu {
+    display: flex;
+    justify-content: end;
   }
 
   .typed-out {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   div.body {
     height: 100px;
+    /* padding-bottom: 350px;
+    padding-left: 20px; */
+    padding-top: 100px;
     padding-bottom: 350px;
-    padding-left: 20px;
+  }
+
+  .plantify {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   div.myinfo {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   a.portfolio {
@@ -287,3 +320,92 @@ button {
     padding: 25px;
   }
 }
+
+
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+
+.plants {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: relative fixed;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: white;
+}
+
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active, .dot:hover {
+  background-color: grey;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+div.links a {
+  color: white;
+}
+
+
